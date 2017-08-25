@@ -27,7 +27,7 @@ $(function(){
 
     // ページトップ要素が初期位置に来た時に固定(static,fixedクラスを操作)
     $(window).on('load', function () {
-        var $footerOffset = $('#footer').offset().top;
+        var $footerOffset = $('.footer').offset().top;
         $(window).on('scroll', function () {
             if($(window).scrollTop() + $(window).height() < $footerOffset) {
                 $pagetop.removeClass('static');
@@ -40,7 +40,7 @@ $(function(){
     });
 
     // ページ内リンクのスムーススクロール
-    $('a[href^=#]').click(function() {
+    $('a[href^="#"]').click(function() {
          // スクロールの速度
       var speed = 400; // ミリ秒
       // アンカーの値取得

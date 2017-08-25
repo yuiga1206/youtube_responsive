@@ -1,0 +1,43 @@
+main {
+  box-sizing: border-box;
+  @media only screen and (min-width: 900px) {
+    width: 900px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 899px) {
+    width: 100%;
+  }
+}
+
+.video {
+  &-sec {
+    @media only screen and (min-width: 900px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    margin-bottom: 100px;
+  }
+  &-outer {
+    @media only screen and (min-width: 900px) {
+      width: 267px;
+    }
+    @media only screen and (max-width: 899px) {
+      margin-bottom: 20px;
+      position:relative;
+      width:100%;
+      height: 0;
+      padding-bottom:56.25%;
+    }
+    iframe {
+      width: 100%;
+      @media only screen and (max-width: 899px) {
+        position:absolute;
+        top:0;
+        right:0;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}
