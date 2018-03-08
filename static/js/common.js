@@ -55,16 +55,16 @@ $(function(){
     });
 
 
-  var ua = navigator.userAgent;
-  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-    // スマートフォン用コード
-    $('#video').append('<p>あああああ</p>');
-  } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-    // タブレット用コード
-  } else {
-    // PC用コード
-    $('#video').append('<iframe width="1000" height="500" src="https://www.youtube.com/embed/mQ0Clc2F-pY?autoplay=1&loop=1&playlist=mQ0Clc2F-pY&rel=0&showinfo=0&controls=0&modestbranding=1&disablekb=1&iv_load_policy=3" frameborder="0"></iframe>');
-  }
+  // var ua = navigator.userAgent;
+  // if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+  //   // スマートフォン用コード
+  //   $('#video').append('<p>あああああ</p>');
+  // } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+  //   // タブレット用コード
+  // } else {
+  //   // PC用コード
+  //   $('#video').append('<iframe width="1000" height="500" src="https://www.youtube.com/embed/mQ0Clc2F-pY?autoplay=1&loop=1&playlist=mQ0Clc2F-pY&rel=0&showinfo=0&controls=0&modestbranding=1&disablekb=1&iv_load_policy=3" frameborder="0"></iframe>');
+  // }
 
 
 
